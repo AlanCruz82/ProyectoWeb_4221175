@@ -13,5 +13,5 @@ CREATE TABLE usuarios(
     PRIMARY KEY (id_uss)
 )DEFAULT CHARACTER SET utf8;
 
-INSERT INTO Usuarios (nombre_uss, apellidopat_uss, apellidomat_uss, edad_uss, telefono_uss, email_uss, genero_uss) 
-VALUES  ('Juan', 'Perez', 'Gómez', 30, "5551234567", 'juan.gomez@example.com', 'Masculino');
+INSERT INTO usuarios (nombre_uss, apellidopat_uss, apellidomat_uss, edad_uss, telefono_uss, email_uss, genero_uss) 
+VALUES  ('Juan', 'Perez', 'Gomez', 30, "5551234567", 'juan.gomez@example.com', 'Masculino');

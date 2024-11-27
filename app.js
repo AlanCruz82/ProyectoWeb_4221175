@@ -34,7 +34,6 @@ db.connect(err => {
 });
 
 //iniciamos el server
-
 const hostname= '192.168.1.75';
 const port = 3009;
 app.listen(port,()=>{
