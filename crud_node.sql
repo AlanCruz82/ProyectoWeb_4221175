@@ -15,3 +15,7 @@ CREATE TABLE usuarios(
 
 INSERT INTO usuarios (nombre_uss, apellidopat_uss, apellidomat_uss, edad_uss, telefono_uss, email_uss, genero_uss) 
 VALUES  ('Juan', 'Perez', 'Gomez', 30, "5551234567", 'juan.gomez@example.com', 'Masculino');
+
+CREATE USER 'visitante'@'localhost' IDENTIFIED BY '123456789';
+GRANT ALL PRIVILEGES ON crud_node.* TO 'visitante'@'localhost';
+FLUSH PRIVILEGES;

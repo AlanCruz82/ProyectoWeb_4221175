@@ -17,8 +17,8 @@ app.set('view engine', 'ejs');
 //crear la conexion
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root', // tu usuario de MySQL
-    password: 'cuartosemestre', // tu contraseña de MySQL
+    user: 'visitante', // tu usuario de MySQL
+    password: '123456789', // tu contraseña de MySQL
     database: 'crud_node',
     port: 3306
 });
