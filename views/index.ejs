@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con Node.js y MySQL</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align"><i>Listado de Usuarios</i></h1>
+        <table class="highlight centered responsive-table z-depth-1">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido paterno</th>
+                <th>Apellido materno</th>
+                <th>Edad</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Genero</th>
+                <th>Acciones</th>
+            </tr>
+            <% users.forEach(user => { %>
+            <tr>
+                <td><%= user.id_uss %></td>
+                <td><%= user.nombre_uss %></td>
+                <td><%= user.apellidopat_uss %></td>
+                <td><%= user.apellidomat_uss %></td>
+                <td><%= user.edad_uss %></td>
+                <td><%= user.telefono_uss %></td>
+                <td><%= user.email_uss %></td>
+                <td><%= user.genero_uss %></td>
+                <td>
+                    <div>
+                        <a href="/edit/<%= user.id_uss %>" class="waves-effect waves-light btn">Editar</a>
+                        <a href="/delete/<%= user.id_uss %>" class="waves-effect waves-light btn">Eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <% }); %>
+        </table>
+
+        <div class="extra-actions center-align">
+            <a href="/agregar" class="waves-effect waves-light btn"><i class="material-icons right">face</i>Agregar nuevo usuario</a>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

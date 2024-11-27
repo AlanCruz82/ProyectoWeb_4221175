@@ -1,0 +1,23 @@
+.extra-actions{
+    margin-top: 15px;
+}
+
+h1, h3{
+    opacity: 50%;
+}
+
+.btn{
+    background-color: rgb(153, 165, 165);
+}
+
+.btn:hover{
+    background-color: rgb(220, 220, 227);
+}
+
+body{
+    background-color: rgb(129, 125, 125);
+}
+
+table{
+    background-color: rgb(202, 200, 200);
+}
